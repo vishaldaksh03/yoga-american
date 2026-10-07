@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#B8502F">
+  <meta property="og:site_name" content="Cedar &amp; Sun Yoga">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://images.pexels.com/photos/8436622/pexels-photo-8436622.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23B8502F'/%3E%3Cpath d='M12 30a12 12 0 0 1 24 0z' fill='%23F2A541'/%3E%3Cpath d='M10 34h28' stroke='%23FFF9F2' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Journal | Cedar &amp; Sun Yoga</title>
+  <meta name="description" content="Yoga tips, breathwork, nutrition and retreat stories from the teachers at Cedar &amp; Sun Yoga in Austin, Texas.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo" aria-label="Cedar &amp; Sun Yoga home">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <defs><linearGradient id="logoGradH" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2A541"/><stop offset="1" stop-color="#E07A3F"/></linearGradient></defs>
+          <path d="M10 31a14 14 0 0 1 28 0z" fill="url(#logoGradH)"/>
+          <g stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <path d="M24 5v5M9.5 11.5l3.5 3.5M38.5 11.5L35 15M3 24h5M40 24h5"/>
+            <path d="M5 35h38M12 41h24"/>
+          </g>
+        </svg>
+        <span>Cedar &amp; Sun<em>Yoga Studio</em></span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="classes.html">Classes</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#booking" class="btn mobile-cta">Book Your Free Class</a>
+      </nav>
+      <a href="contact.html#booking" class="btn btn--sm nav-cta">Book a Class</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner" style="background-image:url('assets/img/8534435.jpg')">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Journal</div>
+        <span class="eyebrow">The journal</span>
+        <h1>Stories &amp; wisdom<br>for your practice</h1>
+        <p>Practice tips, breathwork, nutrition and reflections from our teachers.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="featured-post reveal">
+          <div class="featured-post__img"><img src="assets/img/3822534.jpg" alt="A 10-minute morning yoga ritual"></div>
+          <div class="featured-post__body">
+            <div class="post-meta"><span class="pill">Featured</span><span>Sep 18, 2026</span><span>5 min read</span></div>
+            <h2>A 10-Minute Morning Ritual to Wake Up Your Body</h2>
+            <p>You don't need a full class to feel the benefits of yoga. These five gentle postures will get your energy moving before your first cup of coffee.</p>
+            <div><a class="btn" href="blog.html#morning-ritual" data-post="morning-ritual">Read Article</a></div>
+          </div>
+        </article>
+
+        <div class="filter-bar day-tabs" id="blogFilter" aria-label="Filter articles">
+          <button class="day-tab active" type="button" data-filter="all">All</button>
+          <button class="day-tab" type="button" data-filter="Practice">Practice</button>
+          <button class="day-tab" type="button" data-filter="Wellness">Wellness</button>
+          <button class="day-tab" type="button" data-filter="Beginners">Beginners</button>
+          <button class="day-tab" type="button" data-filter="Nutrition">Nutrition</button>
+          <button class="day-tab" type="button" data-filter="Retreats">Retreats</button>
+        </div>
+
+        <div class="grid-3" id="postGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-head reveal" style="margin-bottom:30px">
+          <span class="eyebrow">Stay inspired</span>
+          <h2>Get new articles in your inbox</h2>
+          <p>One thoughtful email a month. No spam, ever.</p>
+        </div>
+        <div style="max-width:520px;margin:0 auto" class="reveal">
+          <form class="newsletter" novalidate>
+            <label for="blog-email" class="sr-only">Email address</label>
+            <input id="blog-email" type="email" placeholder="Your email address" required>
+            <button class="btn" type="submit">Subscribe</button>
+          </form>
+          <p class="newsletter-msg text-center" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="postModal" role="dialog" aria-modal="true" aria-label="Article">
+    <div class="modal__panel">
+      <button class="modal__close" type="button" aria-label="Close article">✕</button>
+      <img src="" alt="">
+      <div class="modal__content"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo" aria-label="Cedar &amp; Sun Yoga home">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <defs><linearGradient id="logoGradF" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2A541"/><stop offset="1" stop-color="#E07A3F"/></linearGradient></defs>
+              <path d="M10 31a14 14 0 0 1 28 0z" fill="url(#logoGradF)"/>
+              <g stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+                <path d="M24 5v5M9.5 11.5l3.5 3.5M38.5 11.5L35 15M3 24h5M40 24h5"/>
+                <path d="M5 35h38M12 41h24"/>
+              </g>
+            </svg>
+            <span>Cedar &amp; Sun<em>Yoga Studio</em></span>
+          </a>
+          <p>A warm, welcoming South Austin studio to breathe, move and rise. Yoga for real life, since 2014.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8zM10 15V9l5.2 3z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c.4 2.6 2.2 4.4 5 4.8"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#teachers">Our Teachers</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="classes.html#schedule">Weekly Schedule</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Journal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit Us</h4>
+          <ul class="footer-links">
+            <li>418 Marigold Lane, Suite B<br>Austin, TX 78704</li>
+            <li><a href="tel:+15125550147">(512) 555-0147</a></li>
+            <li><a href="mailto:hello@cedarandsunyoga.com">hello@cedarandsunyoga.com</a></li>
+            <li>Mon–Fri: 5:45 AM – 8:45 PM<br>Sat: 7:00 AM – 6:00 PM<br>Sun: 8:00 AM – 7:00 PM</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p>Monthly practice tips, workshop dates and retreat news — straight to your inbox.</p>
+          <form class="newsletter" novalidate>
+            <label for="nl-email" class="sr-only">Email address</label>
+            <input id="nl-email" type="email" placeholder="Your email address" required>
+            <button class="btn" type="submit">Join</button>
+          </form>
+          <p class="newsletter-msg" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span class="year">2026</span> Cedar &amp; Sun Yoga. All rights reserved.</span>
+        <span><a href="#">Privacy Policy</a> · <a href="#">Terms</a> · <a href="#">Accessibility</a> · Photos &amp; video: <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
